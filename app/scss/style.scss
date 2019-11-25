@@ -1,6 +1,52 @@
 @import 'vars';
 @import 'libs';
-@import 'fonts';
+@import 'global';
 
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 91px;
+	background-color: #fff;
+}
+.header__text {
+	margin-left: auto;
+	margin-right: 25px; 
+	span {
+		color: $red;
+	}
+}
 
+.header__btn {
+	padding: 9px;
+	font-size: 12px;
+	line-height: 12px;
+	width: 72px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	& + a {
+		margin-left: 7px;
+	}
+}
+
+.header__menu {
+	background-color: #263238;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	&__item{
+		display: inline-block;
+		& + li{
+			margin-left: 35px;
+		}
+	}
+	&__link	{
+		font-weight: 500;
+		color: #fff;
+		font-size: 14px;
+	}
+}
 @import 'media';
