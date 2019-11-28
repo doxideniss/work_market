@@ -319,6 +319,44 @@
 }
 // end advantages
 
+// start author
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 245px 0 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    background-color: $green;
+    padding: 70px 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    max-width: 265px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    margin-right: 45px;
+    span {
+      font-weight: 700;
+    }
+  }
+  &__link {
+    width: 225px;
+    background-color: #fff;
+    padding: 25px 0 22px;
+    text-align: center;
+    color: $bg;
+    font-size: 18px;
+  }
+}
+// end author
+
 // start tutorial
 .tutorial {
   background-color: #fff;
@@ -335,7 +373,7 @@
       min-height: 270px;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;      
+      background-position: center;
     }
     &-title {
       background-color: #f8f8f8;
