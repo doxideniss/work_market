@@ -9,4 +9,20 @@ $(function () {
 		}
 	});
 
+	$(".rate-star").rateYo({
+		fullStar: true,
+		starWidth: "12px",
+		ratedFill: "#ffa726",
+		spacing: "2px",
+		readOnly: true
+	});
+	
+	$('.product-slider__inner').slick({
+		slidesToScroll: 4,
+		slidesToShow: 4,
+		arrows: false,
+		dots: true,
+		dotsClass: 'product-slider__dots'
+	})
+
 })

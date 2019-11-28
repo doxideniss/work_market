@@ -2,6 +2,7 @@
 @import "libs";
 @import "global";
 
+// start header
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -49,7 +50,9 @@
     font-size: 14px;
   }
 }
+// end header
 
+// start search
 .search {
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,7 +109,9 @@
     }
   }
 }
+// end search
 
+// start products
 .products {
   padding: 110px 0;
   background-color: $grey;
@@ -190,7 +195,8 @@
 	}
 	&-author {
 		display: flex;
-		align-items: center;
+    align-items: center;
+    max-width: 245px;
 		span {
 			font-size: 14px;
 		}
@@ -203,8 +209,14 @@
 			background-size: cover;
 			display: inline-block;
 			margin-right: 14px;
-		}
-	}
+    }
+  }
+  
+  &-star {
+    span {
+      color: $bg;
+    }
+  }
 }
 
 .products__bottom-btn{
@@ -220,6 +232,38 @@
 		cursor: pointer;
 	}
 }
+// end products
 
+// start product-slider
+.product-slider {
+  padding: 110px 0 120px;
+  &__dots {
+    text-align: center;
+    margin-top: 37px;
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 7px;
+      }
+      &.slick-active {
+        button {
+          background-color: $green;
+        }
+      }
+    }
+    button {
+      font-size: 0;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: rgb(232, 232, 232);
+    }    
+  }
+}
+
+// end product-slider
 
 @import "media";
