@@ -117,19 +117,19 @@
   background-color: $grey;
 }
 .products__inner-box {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .products__inner-btn {
   text-align: center;
-	margin-bottom: 60px;
-	.mixitup-control-active {
-		background-color: $red;
-		color: #fff;
-	}
+  margin-bottom: 60px;
+  .mixitup-control-active {
+    background-color: $red;
+    color: #fff;
+  }
   button {
-		outline: none;
+    outline: none;
     font-size: 14px;
     font-weight: 500;
     padding: 12px 21px;
@@ -145,73 +145,73 @@
 
 .products__item {
   max-width: 442px;
-	width: 100%;
-	border: 1px solid #ebeeef;
-	font-weight: 500;
-	box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
-	margin-bottom: 30px;
-	&-img {
-		display: block;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		min-height: 250px;
-	}
-	&-content {
-		padding: 10px 30px;
-		border-bottom: 1px solid #e7ecf2;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		min-height: 90px;
-	}
-	&-name{
-		max-width: 310px;
-	}
-	&-title {
-		font-size: 18px;
-		line-height: 22px;
-		color: $bg;
-		margin-bottom: 5px;
-		display: block;
-	}
-	&-category {
-		font-size: 14px;
-		line-height: 18px;
-		color: $green;
-		display: block;
-	}
-	&-price {
-		font-size: 20px;
-		font-weight: 700;
-		color: $bg;
-	}
-	&-info {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 10px 30px;
-		min-height: 70px;
-	}
-	&-author {
-		display: flex;
+  width: 100%;
+  border: 1px solid #ebeeef;
+  font-weight: 500;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px;
+  &-img {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+  }
+  &-content {
+    padding: 10px 30px;
+    border-bottom: 1px solid #e7ecf2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+  }
+  &-name {
+    max-width: 310px;
+  }
+  &-title {
+    font-size: 18px;
+    line-height: 22px;
+    color: $bg;
+    margin-bottom: 5px;
+    display: block;
+  }
+  &-category {
+    font-size: 14px;
+    line-height: 18px;
+    color: $green;
+    display: block;
+  }
+  &-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: $bg;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    min-height: 70px;
+  }
+  &-author {
+    display: flex;
     align-items: center;
     max-width: 245px;
-		span {
-			font-size: 14px;
-		}
-		.avatar {
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			display: inline-block;
-			margin-right: 14px;
+    span {
+      font-size: 14px;
+    }
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      margin-right: 14px;
     }
   }
-  
+
   &-star {
     span {
       color: $bg;
@@ -219,18 +219,18 @@
   }
 }
 
-.products__bottom-btn{
-	text-align: center;
-	button {
-		margin: 45px 5px 0;
-		border: none;
-		box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
-		padding: 20px 30px;
-		color: #bg;
-		font-size: 16px;	
-		background-color: #fff;
-		cursor: pointer;
-	}
+.products__bottom-btn {
+  text-align: center;
+  button {
+    margin: 45px 5px 0;
+    border: none;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    padding: 20px 30px;
+    color: #bg;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+  }
 }
 // end products
 
@@ -260,7 +260,7 @@
       width: 16px;
       height: 16px;
       background-color: rgb(232, 232, 232);
-    }    
+    }
   }
 }
 
@@ -290,7 +290,7 @@
       border-radius: 50%;
       display: flex;
       justify-content: center;
-      align-items: center; 
+      align-items: center;
       margin: 0 auto 25px;
       transition: all 0.5s;
     }
@@ -298,7 +298,7 @@
       font-size: 24px;
       font-weight: 500;
       color: #fff;
-      margin-bottom:25px;
+      margin-bottom: 25px;
       transition: all 0.5s;
     }
     &-text {
@@ -318,5 +318,36 @@
   }
 }
 // end advantages
+
+// start tutorial
+.tutorial {
+  background-color: #fff;
+  padding: 70px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    &-img {
+      min-height: 270px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;      
+    }
+    &-title {
+      background-color: #f8f8f8;
+      padding: 30px 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      color: $bg;
+    }
+  }
+}
+
+// end tutorial
 
 @import "media";
