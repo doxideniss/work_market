@@ -266,4 +266,57 @@
 
 // end product-slider
 
+// start advantages
+.advantages {
+  padding: 110px 0;
+  background-color: $bg;
+  &__title {
+    color: #fff;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 85px;
+  }
+  &__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0 20px;
+    &-img {
+      width: 113px;
+      height: 113px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      margin: 0 auto 25px;
+      transition: all 0.5s;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom:25px;
+      transition: all 0.5s;
+    }
+    &-text {
+      color: #b0bec5;
+    }
+    &:hover {
+      .advantages__item-title {
+        color: $green;
+      }
+      .advantages__item-img {
+        background-color: $green;
+        g {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+// end advantages
+
 @import "media";
