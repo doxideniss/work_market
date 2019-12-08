@@ -7,6 +7,11 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
+html,
+body {
+	height: 100%;
+}
 body{
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
@@ -26,10 +31,23 @@ li {
 	padding: 0;
 	list-style: none;
 }
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+.main {
+	background-color: #f4f6f5;
 }
 .btn-red {
 	background-color: $red;
@@ -64,41 +82,32 @@ li {
 	margin-right: 13px;
 }
 
-
-
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.breadcrumbs {
+	&__inner {
+		padding: 40px 0;
+	}
+	&__item {
+		display: inline-block;
+		position: relative;
+		
+		& + li {
+			padding-left: 24px;
+			&::before {
+				content: '-';
+				position: absolute;
+				left: 8px;
+				color: $green;
+			}
+		}
+		a{
+			color: #b0bec5;
+		}
+		&:last-child{
+			a,
+			span{
+				color: $bg;
+			}
+		}
+	}
 }
 
-.icon-map-marker:before {
-  content: "\f041";
-}
-.icon-shopping-cart:before {
-  content: "\f07a";
-}
-.icon-phone:before {
-  content: "\f095";
-}
-.icon-bolt:before {
-  content: "\f0e7";
-}
-.icon-flash:before {
-  content: "\f0e7";
-}
-.icon-angle-right:before {
-  content: "\f105";
-}
-.icon-location-arrow:before {
-  content: "\f124";
-}
