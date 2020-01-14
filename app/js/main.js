@@ -9,7 +9,7 @@ $(function () {
 	$('.icon-th-large').on('click', function () {
 		$('.products__item').removeClass('list')
 		$('.icon-th-large').addClass('btn--active')
-		$('.icon-th-list').removeClass('btn--active')	
+		$('.icon-th-list').removeClass('btn--active')
 	})
 
 	$('.menu__btn').on('click', function () {
@@ -19,6 +19,15 @@ $(function () {
 	$('.header__btn-menu').on('click', function () {
 		$('.header__box').toggleClass('active')
 	})
+
+	$('.product__tabs .tab').on('click', function (event) {
+		var id = $(this).attr('data-id');
+		$('.product__tabs').find('.tab-item').removeClass('active-tab').hide();
+		$('.product__tabs .tabs').find('.tab').removeClass('active');
+		$(this).addClass('active');
+		$('#' + id).addClass('active-tab').fadeIn();
+		return false;
+	});
 
 	$(".rate-star").rateYo({
 		fullStar: true,
